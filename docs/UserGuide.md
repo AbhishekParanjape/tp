@@ -36,7 +36,7 @@ TutorCentral is a **desktop app for freelance tutors in Singapore** to manage st
 | **Mainstream OS**     | Windows, macOS, and Linux operating systems                                                                             |
 | **Tutor**             | The user of TutorCentral — a freelance tutor managing their students                                                    |
 | **Student**           | A person being tutored, whose information is stored in TutorCentral                                                     |
-| **Emergency Contact** | A valid 8-digit Singapore phone number (starting with 8 or 9) of a person to contact in case of emergency for a student |
+| **Emergency Contact** | A valid 3-15 digit phone number of a person to contact in case of emergency for a student (may be landline or short code) |
 | **Attendance**        | A record of whether a student was present, absent, or excused for a lesson                                              |
 | **Attendance Status** | One of: `Present`, `Absent`, or `Excused` — indicates a student's attendance for a specific lesson                      |
 | **Payment Status**    | One of: `Paid`, `Due`, or `Overdue` — indicates the current fee payment status of a student                             |
@@ -126,7 +126,7 @@ TutorCentral is a **desktop app for freelance tutors in Singapore** to manage st
 | `n/`   | Name              | Alphanumeric characters, spaces, and hyphens, cannot be blank           |
 | `e/`   | Email             | Valid email format (e.g., `user@example.com`)                            |
 | `a/`   | Address           | Any text, cannot be blank                                                |
-| `ec/`  | Emergency Contact | Exactly 8 digits, must start with 8 or 9 (valid Singapore mobile number) |
+| `ec/`  | Emergency Contact | 3-15 digits (may be landline or short code) |
 | `s/`   | Subject           | Alphanumeric characters and spaces; must not be blank; matching is case-insensitive |
 | `d/`   | Day               | Full day names (Monday-Sunday) or 3-letter abbreviations (Mon-Sun), case-insensitive |
 | `ti/`  | Time              | 4-digit 24-hour format, 0000-2359                                        |
@@ -563,7 +563,7 @@ TutorCentral provides specific error messages to help you identify and fix comma
 | Error Message | Cause | Solution |
 |--------------|-------|----------|
 | `Emails should be of the format local-part@domain...` | Email format is invalid | Use a valid email format like `user@example.com` |
-| `Emergency contact should be exactly 8 digits starting with 8 or 9` | Emergency contact number is invalid | Use an 8-digit Singapore mobile number starting with 8 or 9 |
+| `Emergency contact must be a 3 to 15 digit number` | Emergency contact number is invalid | Use a 3-15 digit number (may be landline or short code) |
 | `Tag names should start with an alphanumeric character...` | Tag format is invalid | Tags must start with a letter/number and contain only letters, numbers, hyphens, and underscores |
 | `Addresses can take any values, and it should not be blank` | Address field is empty | Provide a non-empty address |
 

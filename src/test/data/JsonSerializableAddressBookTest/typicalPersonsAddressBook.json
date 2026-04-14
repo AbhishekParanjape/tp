@@ -4,38 +4,42 @@
     "name" : "Alice Pauline",
     "email" : "alice@example.com",
     "address" : "123, Jurong West Ave 6, #08-111",
-    "lessonSlots" : [ { "subject": "Mathematics", "day": "Monday", "time": "1400" } ],
+    "lessonSlots" : [ { "subject": "Mathematics", "day": "Monday", "time": "1400" }, { "subject": "Physics", "day": "Wednesday", "time": "1000" } ],
     "emergencyContact" : "94351253",
     "paymentStatus" : "Paid",
+    "remark" : "Excellent student, shows great improvement",
     "tags" : [ "secondary" ],
-    "attendanceRecords" : { }
+    "attendanceRecords" : { "Mathematics": { "Monday 1400 - Mathematics": "Present" }, "Physics": { "Wednesday 1000 - Physics": "Absent" } }
   }, {
     "name" : "Benson Meier",
     "email" : "johnd@example.com",
     "address" : "311, Clementi Ave 2, #02-25",
-    "lessonSlots" : [ { "subject": "English", "day": "Tuesday", "time": "0900" } ],
+    "lessonSlots" : [ { "subject": "English", "day": "Tuesday", "time": "0900" }, { "subject": "Literature", "day": "Thursday", "time": "1500" } ],
     "emergencyContact" : "98765432",
     "paymentStatus" : "Due",
+    "remark" : "Needs help with grammar",
     "tags" : [ "priority", "primary" ],
-    "attendanceRecords" : { }
+    "attendanceRecords" : { "English": { "Tuesday 0900 - English": "Present" }, "Literature": { "Thursday 1500 - Literature": "Absent" } }
   }, {
     "name" : "Carl Kurz",
     "email" : "heinz@example.com",
     "address" : "wall street",
-    "lessonSlots" : [ ],
+    "lessonSlots" : [ { "subject": "Chemistry", "day": "Friday", "time": "1100" } ],
     "emergencyContact" : "95352563",
     "paymentStatus" : "Paid",
+    "remark" : "Very focused during lab sessions",
     "tags" : [ ],
-    "attendanceRecords" : { }
+    "attendanceRecords" : { "Chemistry": { "Friday 1100 - Chemistry": "Present" } }
   }, {
     "name" : "Daniel Meier",
     "email" : "cornelia@example.com",
     "address" : "10th street",
-    "lessonSlots" : [ ],
+    "lessonSlots" : [ { "subject": "Biology", "day": "Monday", "time": "0900" }, { "subject": "Mathematics", "day": "Wednesday", "time": "1400" } ],
     "emergencyContact" : "87652533",
     "paymentStatus" : "Due",
+    "remark" : "Struggling with calculations",
     "tags" : [ "secondary" ],
-    "attendanceRecords" : { }
+    "attendanceRecords" : { "Biology": { "Monday 0900 - Biology": "Present" }, "Mathematics": { "Wednesday 1400 - Mathematics": "Excused" } }
   }, {
     "name" : "Elle Meyer",
     "email" : "werner@example.com",
@@ -43,25 +47,28 @@
     "lessonSlots" : [ ],
     "emergencyContact" : "94822240",
     "paymentStatus" : "Paid",
+    "remark" : "New student, orientation completed",
     "tags" : [ ],
     "attendanceRecords" : { }
   }, {
     "name" : "Fiona Kunz",
     "email" : "lydia@example.com",
     "address" : "little tokyo",
-    "lessonSlots" : [ ],
+    "lessonSlots" : [ { "subject": "Art", "day": "Tuesday", "time": "1300" }, { "subject": "Music", "day": "Friday", "time": "1600" } ],
     "emergencyContact" : "94824270",
     "paymentStatus" : "Due",
+    "remark" : "Talented in creative arts",
     "tags" : [ ],
-    "attendanceRecords" : { }
+    "attendanceRecords" : { "Art": { "Tuesday 1300 - Art": "Present" }, "Music": { "Friday 1600 - Music": "Present" } }
   }, {
     "name" : "George Best",
     "email" : "anna@example.com",
     "address" : "4th street",
-    "lessonSlots" : [ ],
+    "lessonSlots" : [ { "subject": "Physical Education", "day": "Thursday", "time": "0800" } ],
     "emergencyContact" : "94824420",
     "paymentStatus" : "Overdue",
+    "remark" : "Athletic, excels in sports",
     "tags" : [ ],
-    "attendanceRecords" : { }
+    "attendanceRecords" : { "Physical Education": { "Thursday 0800 - Physical Education": "Absent" } }
   } ]
 }

@@ -799,7 +799,7 @@ Such items are tracked in [Appendix: Planned Enhancements](#appendix-planned-enh
 * **Attendance**: The record of a student's presence at a lesson slot
 * **Attendance Status**: The recorded status for attendance: `Present`, `Absent`, or `Excused`
 * **Payment Status**: The financial status of a student: `Paid`, `Due`, or `Overdue`
-* **Emergency Contact**: An 8-digit Singapore phone number for a student's parent/guardian
+* **Emergency Contact**: A 3-15 digit phone number for a student's parent/guardian (may be landline or short code)
 * **Remark**: A free-text note attached to a student record
 * **Tag**: A single-token label for categorizing students (e.g., `primary`, `exam-prep`, `lower_sec`)
 * **Field**: A piece of data within a student record (e.g., Name, Emergency Contact)
@@ -968,16 +968,16 @@ testers are expected to do more *exploratory* testing.
 
    1. Prerequisites: List all students using `list`. First student has a lesson slot for Mathematics on Monday at 1400.
 
-   1. Test case: `markattendance 1 s/Mathematics d/Monday ti/1400 st/Present`<br>
+   1. Test case: `markattendance 1 s/Mathematics d/Monday ti/1400 l/Week 1 st/Present`<br>
       Expected: Attendance marked. Success message shown.
 
-   1. Test case: `markattendance 1 s/mathematics d/Monday ti/1400 st/Absent` (lowercase subject)<br>
+   1. Test case: `markattendance 1 s/mathematics d/Monday ti/1400 l/Week 1 st/Absent` (lowercase subject)<br>
       Expected: Attendance updated (case-insensitive). Success message shown.
 
-   1. Test case: `markattendance 1 s/Mathematics d/Tuesday ti/0900 st/Present` (non-existent slot)<br>
+   1. Test case: `markattendance 1 s/Mathematics d/Tuesday ti/0900 l/Week 1 st/Present` (non-existent slot)<br>
       Expected: Error message — student does not have this lesson slot.
 
-   1. Test case: `markattendance 0 s/Mathematics d/Monday ti/1400 st/Present`<br>
+   1. Test case: `markattendance 0 s/Mathematics d/Monday ti/1400 l/Week 1 st/Present`<br>
       Expected: Error — invalid index.
 
 ### Viewing attendance
